@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #e6c492;
+  color: #5B4A3E;
+  text-align: center;
+}
+
+header {
+  padding: 60px 20px 20px;
+  background: #fff9f2;
+  border-bottom: 2px solid #C4A66D;
+}
+
+header h1 {
+  color: #A1563F;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #543624;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 24px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  overflow: visible;
+}
+
+.art-card {
+  background: #fff5e6;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(196, 166, 109, 0.3);
+  transition: 
+    transform 0.3s ease, 
+    box-shadow 0.3s ease, 
+    border-color 0.3s ease, 
+    border-width 0.3s ease;
+  will-change: transform;
+  overflow: hidden;
+
+  border: 2px solid transparent; /* invisible border by default */
+}
+
+.art-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(196, 166, 109, 0.5);
+  border-color: #C4A66D; /* muted gold border on hover */
+  border-width: 4px;     /* thicker border on hover */
+}
+
+.art-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+}
+
+footer {
+  background: #E8E0D4;
+  padding: 30px;
+  font-size: 0.9rem;
+  color: #5B4A3E;
+  border-top: 2px solid #C4A66D;
+}
+
+footer a {
+  color: #A1563F;
+  display: block;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #C4A66D;
+}
+
+.art-img-wrapper {
+  position: relative;
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.art-date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 0.9rem;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.art-img-wrapper:hover .art-date {
+  opacity: 1;
+}
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="pmcss.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<a href="index.html" class="theme-toggle">☀️ Return to the ADA</a>
+
+
+</head>
+
+<div class="background-polaroids">
+  <img src="img/pm dazai1.JPG" class="polaroid-bg right" />
+  <img src="img/pm dazai2.JPG" class="polaroid-bg left" />
+  <img src="img/pm dazai3.JPG" class="polaroid-bg right" />
+  <img src="img/pm dazai4.JPG" class="polaroid-bg left" />
+  <img src="img/pm dazai5.JPG" class="polaroid-bg right" />
+  <img src="img/pm dazai6.JPG" class="polaroid-bg left" />
+  <img src="img/pm dazai7.JPG" class="polaroid-bg right" />
+  <img src="img/pm dazai8.JPG" class="polaroid-bg left" />
+  <img src="img/pm dazai9.JPG" class="polaroid-bg right" />
+</div>
+
+
+<body>
+
+<div id="video-popup" class="hidden">
+  <video id="intro-video" playsinline>
+    <source src="img/dazai punch akuta.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div id="video-time">0:00</div>
+  <button id="mute-btn">🔊</button>
+  <button id="close-btn">✖</button>
+  <div id="play-overlay">▶ Click to play</div>
+</div>
+
+
+
+
+
+
+  <!-- Dazai Easter Egg -->
+  <div id="dazai-easter-egg">
+    <img src="img/pmdazai.png" alt="Mini Dazai">
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <h1>Hey, I'm Zuzanna Krzysztoszek</h1>
+    <p>A T-Level student doing stuff for funsies 🧒</p>
+  <img src="https://64.media.tumblr.com/6de87a3e19aa9d677c81ee8f1c3c6629/8005cd504656d056-85/s2048x3072/2cfc8d1ea1cdbdba9967e438f989ab33c51819ec.pnj" alt="lace divider" class="lace-divider" />
+  </section>
+
+  <!-- About Me -->
+  <section class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I'm studying T-Level Digital Production, Design & Development. I <s>hate</s> love making websites that do cool stuff and occasionally break for no reason. This is my scroll-powered portfolio site. Welcome.
+    </p>
+  <img src="https://64.media.tumblr.com/6de87a3e19aa9d677c81ee8f1c3c6629/8005cd504656d056-85/s2048x3072/2cfc8d1ea1cdbdba9967e438f989ab33c51819ec.pnj" alt="lace divider" class="lace-divider" />
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>An Armed Detective Agencey themed website</h3>
+      <p>A website that lets you hire the detectives from the hit anime, Bungou Stray Dogs.</p>
+    </div>
+    <div class="project-card">
+      <h3>This Website</h3>
+      <p>You’re looking at it. Built with HTML, CSS and mental exhaustion.</p>
+    </div>
+    <div class="project-card">
+      <h3>Multiple unfinished games</h3>
+      <p>It's in the title. Procrastination is a pain.</p>
+    </div>
+  <img src="https://64.media.tumblr.com/6de87a3e19aa9d677c81ee8f1c3c6629/8005cd504656d056-85/s2048x3072/2cfc8d1ea1cdbdba9967e438f989ab33c51819ec.pnj" alt="lace divider" class="lace-divider" />
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML ❌</li>
+      <li>CSS ❌</li>
+      <li>JavaScript ❌</li>
+      <li>Git & GitHub ❌</li>
+      <li>Everything else ❌</li>
+    </ul>
+  <img src="https://64.media.tumblr.com/6de87a3e19aa9d677c81ee8f1c3c6629/8005cd504656d056-85/s2048x3072/2cfc8d1ea1cdbdba9967e438f989ab33c51819ec.pnj" alt="lace divider" class="lace-divider" />
+  </section>
+
+<section class="drawing-section" data-aos="fade-up">
+  <h2>Draw Something!</h2>
+
+  <div class="controls">
+    <label for="color-picker">Color:</label>
+    <input type="color" id="color-picker" value="#5B4A3E" />
+
+    <label for="brush-size">Brush Size:</label>
+    <input type="range" id="brush-size" min="1" max="20" value="3" />
+    <span id="brush-size-display">3px</span>
+
+    <button id="clear-btn">Clear</button>
+    <button id="save-btn">Save</button>
+  </div>
+
+  <canvas id="drawing-canvas" width="600" height="400"></canvas>
+
+  <div id="doodle-gallery" class="gallery-preview">
+    <h3>Your Saved Doodles:</h3>
+  </div>
+
+  <!-- Lace divider at the bottom -->
+  <img
+    src="https://64.media.tumblr.com/6de87a3e19aa9d677c81ee8f1c3c6629/8005cd504656d056-85/s2048x3072/2cfc8d1ea1cdbdba9967e438f989ab33c51819ec.pnj"
+    alt="Lace Divider"
+    class="lace-divider"
+  />
+</section>
+
+
+
+  <!-- Contact -->
+  <section class="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Find me on Discord: zukaiaz, or email me at: <br><strong>zuzanna123223@gmail.com</strong></p>
+  <img src="https://64.media.tumblr.com/6de87a3e19aa9d677c81ee8f1c3c6629/8005cd504656d056-85/s2048x3072/2cfc8d1ea1cdbdba9967e438f989ab33c51819ec.pnj" alt="lace divider" class="lace-divider" />
+  </section>
+
+  <!-- AOS & Dazai Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    let lastScroll = 0;
+    const dazai = document.getElementById('dazai-easter-egg');
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+
+      // If user scrolls UP at top of page
+      if (currentScroll === 0 && lastScroll > currentScroll) {
+        dazai.classList.add('show');
+
+        setTimeout(() => {
+          dazai.classList.remove('show');
+        }, 2000);
+      }
+
+      lastScroll = currentScroll;
+    });
+  </script>
+<script src="pmscript.js"></script>
+<div id="custom-modal" class="modal hidden">
+  <div class="modal-content">
+    <p id="modal-message"></p>
+    <button id="modal-yes-btn">Yes</button>
+  </div>
+</div>
+<!-- Game popup modal -->
+<div id="game-modal" class="modal hidden">
+  <div class="modal-content">
+    <p id="game-message"></p>
+    <div id="game-buttons"></div>
+  </div>
+</div>
+
+<!-- The button to start the game -->
+<section class="game-section" data-aos="fade-up" style="margin-top: 2rem; text-align: center;">
+  <button id="play-game-btn" style="padding: 12px 24px; font-size: 1.1rem; cursor: pointer; border-radius: 8px; background: #A1563F; color: #fff9f2; border: none;">
+    Would you like to play a game?
+  </button>
+  <img src="https://64.media.tumblr.com/6de87a3e19aa9d677c81ee8f1c3c6629/8005cd504656d056-85/s2048x3072/2cfc8d1ea1cdbdba9967e438f989ab33c51819ec.pnj" alt="lace divider" class="lace-divider" />
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Zuzanna — This site is 70% CSS and 30% vibes.</p>
+  </footer>
+</body>
+</html>

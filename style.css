@@ -1,0 +1,275 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #e6c492;  /* soft beige background */
+  color: #5B4A3E;       /* dark brown text */
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  background: #fff9f2;  /* very light beige section bg for subtle layering */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(181, 153, 109, 0.2); /* soft golden shadow */
+  margin-bottom: 40px;
+}
+
+
+h1, h2, h3 {
+  color: #A1563F;       /* burnt sienna headings */
+}
+
+p, li {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: #fff9f2;  /* light beige hero bg */
+}
+
+.project-card {
+  background: #fff5e6;  /* lighter beige card background */
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #C4A66D; /* muted gold border */
+  box-shadow: 0 4px 8px rgba(196, 166, 109, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9rem;
+  background: #E8E0D4; /* lighter beige footer */
+  color: #5B4A3E;
+  border-top: 2px solid #C4A66D;
+}
+
+/* Add some link hover accent, if you have links */
+a {
+  color: #A1563F;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C4A66D;
+  text-decoration: underline;
+}
+
+/* Dazai Easter Egg */
+#dazai-easter-egg {
+  position: fixed;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+  z-index: 9999;
+  transition: top 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+
+#dazai-easter-egg img {
+  width: 120px;
+  height: auto;
+}
+
+#dazai-easter-egg.show {
+  top: 60px;
+  transform: translateX(-50%) rotate(1080deg);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;   /* Full screen */
+  height: 100vh;  /* Full screen */
+  background: rgba(84, 54, 36, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  backdrop-filter: blur(5px);
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #f5dfd0;
+  border-radius: 16px;
+  padding: 30px 40px;
+  max-width: 320px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 8px 8px rgba(212, 145, 92, 0.5);
+  font-family: 'Segoe UI', sans-serif;
+  color: #543624;
+  font-size: 1.2rem;
+  animation: none; /* Disable for now */
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Modal message text should respect line breaks */
+#modal-message {
+  white-space: pre-wrap;
+}
+
+..drawing-section {
+  background: #fff9f2;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 2px dashed #C4A66D;
+  border-bottom: 2px dashed #C4A66D;
+}
+
+.controls {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.controls label {
+  font-weight: bold;
+  color: #5B4A3E;
+}
+
+#brush-size-display {
+  font-weight: bold;
+  color: #5B4A3E;
+}
+
+canvas {
+  border: 3px solid #C4A66D;
+  border-radius: 10px;
+  background: #fff;
+  cursor: crosshair;
+  margin-top: 10px;
+}
+
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background: #C4A66D;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #a98c59;
+}
+
+.gallery-preview {
+  margin-top: 30px;
+}
+
+.gallery-preview h3 {
+  color: #A1563F;
+  margin-bottom: 10px;
+}
+
+.gallery-preview img {
+  max-width: 120px;
+  margin: 8px;
+  border: 2px solid #C4A66D;
+  border-radius: 6px;
+}
+
+.drawing-section {
+  position: relative;
+  padding-bottom: 60px; /* create room for the lace image */
+  overflow: visible;
+}
+
+.lace-divider {
+  position: absolute;
+  bottom: -10px; /* slight overlap into next section */
+  left: 0;
+  width: 100%;
+  max-height: 40px;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 10;
+}
+
+
+/* Make sure the parent section is relatively positioned */
+.top-section {
+  position: relative;
+  background-color: #fff8f1;
+  padding-bottom: 50px; /* leave space for the lace */
+  border-radius: 16px;
+  overflow: visible;
+  z-index: 1;
+}
+
+
+
+
+
+.polaroid-bg {
+  position: absolute;
+  width: 250px;
+  opacity: 0;
+  transform: rotate(var(--rotate)) translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+
+  /* Polaroid look */
+  background: white;
+  padding: 10px 10px 25px 10px; /* extra bottom space */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+
+  /* Make space for pin */
+  margin-top: 20px;
+}
+
+/* Red push pin */
+.polaroid-bg::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  background: radial-gradient(circle at 30% 30%, #ff4b4b, #a80000);
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  z-index: 2;
+}
+
+.polaroid-bg.show {
+  opacity: 1;
+  transform: rotate(var(--rotate)) translateY(0);
+}
+
+.polaroid-bg.left {
+  left: 25px;
+}
+
+.polaroid-bg.right {
+  right: 25px;
+}
+
+

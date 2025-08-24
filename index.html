@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<a href="pm.html" class="theme-toggle">🌙 Enter the Port Mafia</a>
+
+</head>
+
+<div class="background-polaroids">
+  <img src="img/hang dazai.JPEG" class="polaroid-bg right" />
+  <img src="img/chair dazai.JPEG" class="polaroid-bg left" />
+  <img src="img/happy dazai.JPEG" class="polaroid-bg right" />
+  <img src="img/book dazai.JPEG" class="polaroid-bg left" />
+  <img src="img/fainting dazai.JPEG" class="polaroid-bg right" />
+  <img src="img/peakaboo dazai.JPEG" class="polaroid-bg left" />
+  <img src="img/sbook dazai.JPEG" class="polaroid-bg right" />
+  <img src="img/yahoo dazai.JPEG" class="polaroid-bg left" />
+  <img src="img/phone dazai.JPEG" class="polaroid-bg right" />
+</div>
+
+
+<body>
+
+  <!-- Dazai Easter Egg -->
+  <div id="dazai-easter-egg">
+    <img src="https://img1.picmix.com/output/stamp/normal/6/3/9/1/2471936_dd74d.png" alt="Mini Dazai">
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <h1>Hey, I'm Zuzanna Krzysztoszek</h1>
+    <p>A T-Level student doing stuff for funsies 🧒</p>
+  <img src="https://64.media.tumblr.com/c1c178b8d5169282393413d6c165fd2a/43920a61d5818e73-74/s2048x3072/8b4e047262967eca239de945366a9dabd81c4ed2.pnj" alt="lace divider" class="lace-divider" />
+  </section>
+
+  <!-- About Me -->
+  <section class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      I'm studying T-Level Digital Production, Design & Development. I <s>hate</s> love making websites that do cool stuff and occasionally break for no reason. This is my scroll-powered portfolio site. Welcome.
+    </p>
+	<p>I like to draw too</p>
+	<button id="art-button">Press here to see my art</button>
+  <img src="https://64.media.tumblr.com/c1c178b8d5169282393413d6c165fd2a/43920a61d5818e73-74/s2048x3072/8b4e047262967eca239de945366a9dabd81c4ed2.pnj" alt="lace divider" class="lace-divider" />
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>An Armed Detective Agencey themed website</h3>
+      <p>A website that lets you hire the detectives from the hit anime, Bungou Stray Dogs.</p>
+    </div>
+    <div class="project-card">
+      <h3>This Website</h3>
+      <p>You’re looking at it. Built with HTML, CSS and mental exhaustion.</p>
+    </div>
+    <div class="project-card">
+      <h3>Multiple unfinished games</h3>
+      <p>It's in the title. Procrastination is a pain.</p>
+    </div>
+  <img src="https://64.media.tumblr.com/c1c178b8d5169282393413d6c165fd2a/43920a61d5818e73-74/s2048x3072/8b4e047262967eca239de945366a9dabd81c4ed2.pnj" alt="lace divider" class="lace-divider" />
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML ❌</li>
+      <li>CSS ❌</li>
+      <li>JavaScript ❌</li>
+      <li>Git & GitHub ❌</li>
+      <li>Everything else ❌</li>
+    </ul>
+  <img src="https://64.media.tumblr.com/c1c178b8d5169282393413d6c165fd2a/43920a61d5818e73-74/s2048x3072/8b4e047262967eca239de945366a9dabd81c4ed2.pnj" alt="lace divider" class="lace-divider" />
+  </section>
+
+<section class="drawing-section" data-aos="fade-up">
+  <h2>Draw Something!</h2>
+
+  <div class="controls">
+    <label for="color-picker">Color:</label>
+    <input type="color" id="color-picker" value="#5B4A3E" />
+
+    <label for="brush-size">Brush Size:</label>
+    <input type="range" id="brush-size" min="1" max="20" value="3" />
+    <span id="brush-size-display">3px</span>
+
+    <button id="clear-btn">Clear</button>
+    <button id="save-btn">Save</button>
+  </div>
+
+  <canvas id="drawing-canvas" width="600" height="400"></canvas>
+
+  <div id="doodle-gallery" class="gallery-preview">
+    <h3>Your Saved Doodles:</h3>
+  </div>
+
+  <!-- Lace divider at the bottom -->
+  <img
+    src="https://64.media.tumblr.com/c1c178b8d5169282393413d6c165fd2a/43920a61d5818e73-74/s2048x3072/8b4e047262967eca239de945366a9dabd81c4ed2.pnj"
+    alt="Lace Divider"
+    class="lace-divider"
+  />
+</section>
+
+
+
+  <!-- Contact -->
+  <section class="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Find me on Discord: zukaiaz, or email me at: <br><strong>zuzanna123223@gmail.com</strong></p>
+  <img src="https://64.media.tumblr.com/c1c178b8d5169282393413d6c165fd2a/43920a61d5818e73-74/s2048x3072/8b4e047262967eca239de945366a9dabd81c4ed2.pnj" alt="lace divider" class="lace-divider" />
+  </section>
+
+  <!-- AOS & Dazai Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    let lastScroll = 0;
+    const dazai = document.getElementById('dazai-easter-egg');
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+
+      // If user scrolls UP at top of page
+      if (currentScroll === 0 && lastScroll > currentScroll) {
+        dazai.classList.add('show');
+
+        setTimeout(() => {
+          dazai.classList.remove('show');
+        }, 2000);
+      }
+
+      lastScroll = currentScroll;
+    });
+  </script>
+<script src="script.js"></script>
+<div id="custom-modal" class="modal hidden">
+  <div class="modal-content">
+    <p id="modal-message"></p>
+    <button id="modal-yes-btn">Yes</button>
+  </div>
+</div>
+<!-- Game popup modal -->
+<div id="game-modal" class="modal hidden">
+  <div class="modal-content">
+    <p id="game-message"></p>
+    <div id="game-buttons"></div>
+  </div>
+</div>
+
+<!-- The button to start the game -->
+<section class="game-section" data-aos="fade-up" style="margin-top: 2rem; text-align: center;">
+  <button id="play-game-btn" style="padding: 12px 24px; font-size: 1.1rem; cursor: pointer; border-radius: 8px; background: #A1563F; color: #fff9f2; border: none;">
+    Would you like to play a game?
+  </button>
+  <img src="https://64.media.tumblr.com/c1c178b8d5169282393413d6c165fd2a/43920a61d5818e73-74/s2048x3072/8b4e047262967eca239de945366a9dabd81c4ed2.pnj" alt="lace divider" class="lace-divider" />
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Zuzanna — This site is 70% CSS and 30% vibes.</p>
+  </footer>
+</body>
+</html>
